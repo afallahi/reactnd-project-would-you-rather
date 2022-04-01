@@ -4,6 +4,7 @@ import Home from './Home'
 import Navigation from './Navigation'
 import NoPage from './NoPage'
 import NewQuestion from './NewQuestion'
+import LeaderBoard from './LeaderBoard'
 
 
 class PrivateApp extends Component {
@@ -14,6 +15,7 @@ class PrivateApp extends Component {
 				<Switch>
 					<Route path="/" exact component={Home} />
                     <Route path="/add" component={NewQuestion} />
+                    <Route path="/leaderboard" component={LeaderBoard} />
                     <Route component={NoPage} />
 				</Switch>
 			</Router>
